@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  emailsenderapi:
+    image: ${DOCKER_REGISTRY-}emailsenderapi
+    build:
+      context: .
+      dockerfile: Dockerfile
